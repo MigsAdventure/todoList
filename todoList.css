@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+html {
+  height:100%;
+  width:100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size:1.7em;
+  background-color:white;
+}
+
+input {
+  margin:0.5em 15px;
+
+}
+
+form {
+  margin-bottom:25px;
+}
+
+form div.col-xs-4{
+  text-align:right;
+}
+
+button {
+  margin-top: 10px;
+}
+
+button#editBtn {
+  display:none;
+}
+
+th {
+  text-align:center;
+}
+
+.tempRow {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.contact {
+  vertical-align: center;
+  line-height: 3em;
+}
+
+.finishBtn{
+  display:none;
+} 
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mig | To Do List</title>
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="todoList.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <h1 class="text-center">Contacts List</h1>
+    <form class="text-center" id="contactForm">
+      <div class="row form-group">
+        <div class="col-xs-3 ">*Name<input type="text" name="Name" id="nameInput" required></div>
+        <div class="col-xs-3 ">Phone<input type="text" name="Phone" id="phoneInput"></div>
+        <div class="col-xs-3 ">Email<input type="text" name="Email" id="emailInput"></div>
+        <div class="col-xs-3 ">Age<input type="text" name="Age" id="ageInput"></div>
+      </div>
+      <button class="btn btn-primary text-center addBtn" type="submit">Add Contact</button>
+    </form>
+
+    <table class="table">
+        <tr class="row">
+          <th class="col-xs-2">Name</th>
+          <th class="col-xs-2">Phone</th>
+          <th class="col-xs-2">Email</th>
+          <th class="col-xs-2">Age</th>
+          <th class="col-xs-2">Edit</th>
+          <th class="col-xs-2">Delete</th>
+        </tr>
+    </table>
+    <div id="peopleList"></div>
+    <table class="contactList hidden">
+      <tbody>
+        <tr class="col-xs-12 text-center row tempRow" id="templateRow">
+          <td class="name col-xs-2 contact"></td>
+          <td class="phone col-xs-2 contact"></td>
+          <td class="email col-xs-2 contact"></td>
+          <td class="age col-xs-2 contact"></td>
+          <td class="col-xs-2 "><button class="editBtn btn btn-primary">Edit</button>
+          <button class="finishBtn btn btn-success">Save</button></td>
+          <td class="col-xs-2"><button class="delBtn btn btn-danger">X</button></td>
+
+         </tr>
+      </tbody>
+    </table>
+  
+   <script src="todoList.js"></script>
+</body>
+</html>
